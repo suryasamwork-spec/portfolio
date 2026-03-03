@@ -68,111 +68,106 @@ const Portfolio = () => {
 
   const experience = [
     {
-      role: 'Software Developer',
-      company: 'Caldim Engineering Private Limited',
-      period: '2025 - Present',
-      location: 'Hosur, Tamil Nadu',
-      desc: 'Working on developing and deploying enterprise-grade software solutions',
-      icon: <Cpu size={20} />
-    },
-    {
-      role: 'Data Analyst Trainee',
-      company: 'QSpider Private Limited',
-      period: '2025 - 2025',
+      role: 'AI Developer Intern',
+      company: 'Fredrick Cyber Tech',
+      period: '10/2025 – 4/2026',
       location: 'Bangalore, Karnataka',
-      desc: 'Learned and worked on various data analysis tools and techniques',
+      desc: 'Engineered an AI-based chatbot for a cybersecurity company with structured conversational flow. Implemented service-specific user knowledge assessment, analyzed vulnerabilities, integrated backend logic with database systems, and deployed the chatbot in a local server environment.',
       icon: <Brain size={20} />
     },
     {
-      role: 'Software Developer Intern',
-      company: 'Mr. Cooper',
-      period: '2024 - 2024',
-      location: 'Chennai, Tamil Nadu',
-      desc: 'Working on developing and deploying enterprise-grade software solutions',
-      icon: <Brain size={20} />
+      role: 'AI Developer Intern',
+      company: 'Caldim',
+      period: '01/2025 – Present',
+      location: 'Hosur, Tamil Nadu',
+      desc: 'Built an AI-powered Test Case Generator using local LLM (Ollama), automated test case creation via Python + Google Sheets API, and designed an internal AI chatbot to assist team members with workflow understanding and QA productivity.',
+      icon: <Cpu size={20} />
     }
   ];
 
   const education = [
     {
       id: 'UG',
-      degree: 'B.Tech in Computer Science & Engineering',
-      institution: 'Jayalakshmi Institute of Technology',
-      period: '2021 - 2025',
-      specialization: 'Computer Science & Engineering',
-      location: 'Dharmapuri, Tamil Nadu',
+      degree: 'B.Tech in Artificial Intelligence & Data Science',
+      institution: 'Paavai College of Engineering (Anna University)',
+      period: '2022 – 2026',
+      specialization: 'Artificial Intelligence & Data Science',
+      location: 'Namakkal, Tamil Nadu',
       icon: <Code size={20} />
     },
-    {
-      id: '12th',
-      degree: 'Higher Secondary Schooling (HSC)',
-      institution: 'Amala Higher Secondary School',
-      period: '2019 - 2021',
-      location: 'Dharmapuri, Tamil Nadu',
-      specialization: 'Maths,Physics,Chemistry',
-      icon: <Layers size={20} />
-    },
-    {
-      id: '10th',
-      degree: 'Secondary School Leaving Certificate (SSLC)',
-      institution: 'Amala Higher Secondary School',
-      period: '2018 - 2019',
-      location: 'Dharmapuri, Tamil Nadu',
-      specialization: 'General Education',
-      icon: <Database size={20} />
-    }
   ];
 
   const [activeEdu, setActiveEdu] = useState(0);
 
   const skills = [
-    { title: 'Machine Learning', icon: <Cpu size={24} />, desc: 'Predictive modeling & analytics' },
-    { title: 'Python', icon: <Code size={24} />, desc: 'Backend & Data Science' },
-    { title: 'Web Development', icon: <Layout size={24} />, desc: 'Modern React applications' },
-    { title: 'HTML,CSS & BOOTSTRAP', icon: <Database size={24} />, desc: 'Responsive Web Design' },
-    { title: 'Excel', icon: <Eye size={24} />, desc: 'Data Analysis & Visualization' },
-    { title: 'Data Analysis', icon: <Database size={24} />, desc: 'Insightful data visualization' },
-    { title: 'Power BI', icon: <Database size={24} />, desc: 'Data Visualization & Dashboarding' },
-    { title: 'MySQL & Oracle', icon: <Database size={24} />, desc: 'Database Management & Querying' },
+    { title: 'Generative AI & RAG', icon: <Brain size={24} />, desc: 'LangChain, RAG, Prompt Engineering' },
+    { title: 'Python', icon: <Code size={24} />, desc: 'Automation, Analysis & AI Dev' },
+    { title: 'Machine Learning', icon: <Cpu size={24} />, desc: 'ML fundamentals & NLP basics' },
+    { title: 'Chatbot Development', icon: <Smartphone size={24} />, desc: 'AI chatbots with LLMs & APIs' },
+    { title: 'Power BI & Tableau', icon: <Eye size={24} />, desc: 'Data Visualization & Dashboarding' },
+    { title: 'SQL Databases', icon: <Database size={24} />, desc: 'Oracle SQL & MySQL' },
+    { title: 'Advanced Excel', icon: <Layers size={24} />, desc: 'Data cleaning, pivot tables & lookups' },
+    { title: 'AI Tools', icon: <Server size={24} />, desc: 'ChatGPT, Gemini, Claude, ElevenLabs' },
   ];
 
   const tools = [
     { name: 'Python', icon: <Code /> },
-    { name: 'Scikit-Learn', icon: <Cpu /> },
-    { name: 'Git', icon: <Github /> },
-    { name: 'PowerBI', icon: <GitGraph /> },
-    { name: 'React', icon: <Smartphone /> },
-    { name: 'Excel', icon: <Database /> },
+    { name: 'LangChain', icon: <Brain /> },
+    { name: 'LLM', icon: <Cpu /> },
+    { name: 'ChatGPT', icon: <Brain /> },
+    { name: 'Gemini', icon: <Brain /> },
+    { name: 'Hugging Face', icon: <Cpu /> },
+    { name: 'Pinecone', icon: <Database /> },
+    { name: 'FastAPI', icon: <Server /> },
+    { name: 'Power BI', icon: <GitGraph /> },
+    { name: 'Tableau', icon: <Layout /> },
     { name: 'MySQL & Oracle', icon: <Database /> },
-    { name: 'Numpy', icon: <Cpu /> },
+    { name: 'GitHub', icon: <Github /> },
+    { name: 'Jupyter Notebook', icon: <Code /> },
+    { name: 'VS Code', icon: <Code /> },
+    { name: 'Advanced Excel', icon: <Layers /> },
   ];
 
   const initialCerts = [
     {
       id: 1,
-      title: 'Python for Data Science',
-      issuer: 'IBM',
-      date: '2024',
-      img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
+      title: 'Artificial Intelligence A-Z 2026',
+      issuer: 'Udemy',
+      date: '2026',
+      img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop',
     },
     {
       id: 2,
-      title: 'Machine Learning Specialization',
-      issuer: 'Stanford Online',
-      date: '2023',
-      img: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop',
+      title: 'Google Cloud Cybersecurity Certificate',
+      issuer: 'Google Cloud',
+      date: '2024',
+      img: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=2070&auto=format&fit=crop',
     },
     {
       id: 3,
-      title: 'Data Analytics Professional',
-      issuer: 'Google',
-      date: '2023',
+      title: 'Power BI Data Analyst Associate',
+      issuer: 'Microsoft / NASSCOM',
+      date: '2024',
       img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
     },
     {
       id: 4,
-      title: 'Full Stack Web Development',
-      issuer: 'Meta',
+      title: 'Google AI/ML Virtual Internship',
+      issuer: 'Google',
+      date: '2024',
+      img: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop',
+    },
+    {
+      id: 5,
+      title: 'Getting Started with Data',
+      issuer: 'IBM SkillsBuild',
+      date: '2024',
+      img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
+    },
+    {
+      id: 6,
+      title: 'AI and Green Skills',
+      issuer: 'Oracle',
       date: '2024',
       img: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2031&auto=format&fit=crop',
     }
@@ -183,27 +178,33 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: 'Movie Recommendation System',
-      desc: 'Developed a movie recommendation system using Python and machine learning algorithms. ',
-      img: 'https://res.cloudinary.com/dcyedb0sm/image/upload/v1770728784/netblix_jp6ry2.png',
+      title: 'AI Climate Resilience & Disaster Prediction System',
+      desc: 'An AI-powered system that leverages machine learning to analyze climate data and predict natural disasters, providing early warning insights to aid in disaster preparedness and resilience planning.',
+      img: 'https://images.unsplash.com/photo-1504608524841-42584120d26a?q=80&w=2070&auto=format&fit=crop',
       link: '#'
     },
     {
-      title: 'Power BI Health Dashboard',
-      desc: 'Created a comprehensive health dashboard using Power BI to visualize and analyze health data.',
-      img: 'https://res.cloudinary.com/dcyedb0sm/image/upload/v1770786437/health_dashboard_sjzmkf.png',
-      link: '#'
-    },
-    {
-      title: 'Cook Booking Application',
-      desc: 'Developed a cook booking application using ReactJS, Python and MySQL.',
-      img: 'https://res.cloudinary.com/dcyedb0sm/image/upload/v1770786242/kitchen_maestros_x47nxu.png',
-      link: '#'
-    },
-    {
-      title: 'Edge Compute Hub',
-      desc: 'Distributed computing system for low-latency AI.',
+      title: 'NEXUS – Voice-Controlled AI Assistant',
+      desc: 'A voice-enabled AI assistant built using JavaScript and OpenAI APIs. Features speech recognition, text-to-speech, safe search filtering, personalization, and multilingual translation capabilities.',
       img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop',
+      link: '#'
+    },
+    {
+      title: 'Decentralized Voting System (Blockchain)',
+      desc: 'A secure and transparent blockchain-based digital voting platform ensuring immutability, data integrity, and trust through decentralized system principles.',
+      img: 'https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2070&auto=format&fit=crop',
+      link: '#'
+    },
+    {
+      title: 'AI-Powered Test Case Generator',
+      desc: 'Built an enterprise-grade test case generator using local LLM (Ollama) integrated with Python and Google Sheets API. Converts workflow descriptions into structured, professional test cases automatically.',
+      img: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop',
+      link: '#'
+    },
+    {
+      title: 'RAG Chatbot',
+      desc: 'Developed a Retrieval-Augmented Generation (RAG) chatbot using LangChain and LLMs. The chatbot retrieves relevant context from a knowledge base and generates accurate, grounded responses for domain-specific queries.',
+      img: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2070&auto=format&fit=crop',
       link: '#'
     }
   ];
@@ -273,7 +274,7 @@ const Portfolio = () => {
     );
 
     // Open default mail client
-    window.location.href = `mailto:gogul062004@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Suryasamwork@gmail.com?subject=${subject}&body=${body}`;
 
     // Reset form fields
     setFormData({ name: '', email: '', message: '' });
@@ -284,7 +285,7 @@ const Portfolio = () => {
       {/* Navigation */}
       <nav className="nav glass">
         <div className="container nav-container">
-          <div className="nav-logo gradient-text">GM.</div>
+          <div className="nav-logo gradient-text">SM.</div>
           <div className="nav-links">
             {navLinks.map((link, i) => (
               <a key={i} href={link.href} className="nav-link">{link.name}</a>
@@ -303,9 +304,9 @@ const Portfolio = () => {
               className="hero-img"
             />
           </div>
-          <h1 className="hero-name gradient-text">Gokul M</h1>
+          <h1 className="hero-name gradient-text">Surya M</h1>
           <p className="hero-about">
-            Passionate AI Engineer dedicated to building intelligent solutions that bridge the gap between complex data and human intuition. Specializing in Deep Learning and Computer Vision for real-world impact.
+            AI Engineering final-year student with hands-on expertise in Generative AI, RAG, LangChain, and Chatbot development. Passionate about building practical and scalable AI solutions that solve real-world problems.
           </p>
         </div>
 
@@ -500,10 +501,10 @@ const Portfolio = () => {
                 >
                   <div className="resume-pdf-container" ref={setContainerRef}>
                     <Document
-                      file="/Gokul_Resume.pdf"
+                      file="/Surya_M_Cv.pdf"
                       onLoadSuccess={({ numPages }) => setNumPages(numPages)}
                       loading={<div className="loader">Loading Resume...</div>}
-                      error={<div className="error-msg">Please ensure resume.pdf is in the public folder.</div>}
+                      error={<div className="error-msg">Please ensure Surya_M_Cv.pdf is in the public folder.</div>}
                     >
                       <Page
                         pageNumber={1}
@@ -519,7 +520,7 @@ const Portfolio = () => {
               <div className="resume-overlay-fade"></div>
 
               <div className="resume-footer-actions">
-                <a href="/Gokul_Resume.pdf" download="Gokul_Resume.pdf" className="btn btn-primary">
+                <a href="/Surya_M_Cv.pdf" download="Surya_M_Cv.pdf" className="btn btn-primary">
                   <Download size={18} /> Download Full CV
                 </a>
               </div>
@@ -576,23 +577,20 @@ const Portfolio = () => {
       {/* Footer Section */}
       <footer className="footer container">
         <div className="social-links">
-          <a href="https://www.linkedin.com/in/gokul-m-5171b5274/" target="_blank" rel="noopener noreferrer" className="social-card glass glass-hover">
+          <a href="https://www.linkedin.com/in/SuryaM11" target="_blank" rel="noopener noreferrer" className="social-card glass glass-hover">
             <Linkedin size={20} /> <span>LinkedIn</span>
           </a>
-          <a href="mailto:gogul062004@gmail.com" className="social-card glass glass-hover">
+          <a href="mailto:Suryasamwork@gmail.com" className="social-card glass glass-hover">
             <Mail size={20} /> <span>Email</span>
           </a>
-          <a href="https://wa.me/919344721150" target="_blank" rel="noopener noreferrer" className="social-card glass glass-hover">
+          <a href="https://wa.me/918220622844" target="_blank" rel="noopener noreferrer" className="social-card glass glass-hover">
             <MessageCircle size={20} /> <span>WhatsApp</span>
           </a>
-          <a href="https://www.instagram.com/gokul__2k4" target="_blank" rel="noopener noreferrer" className="social-card glass glass-hover">
-            <Instagram size={20} /> <span>Instagram</span>
-          </a>
-          <a href="https://github.com/Gokul6204" target="_blank" rel="noopener noreferrer" className="social-card glass glass-hover">
+          <a href="https://github.com/suryasamwork-spec" target="_blank" rel="noopener noreferrer" className="social-card glass glass-hover">
             <Github size={20} /> <span>GitHub</span>
           </a>
         </div>
-        <p className="copyright">© 2026 Gokul M. All rights reserved.</p>
+        <p className="copyright">© 2026 Surya M. All rights reserved.</p>
       </footer>
 
       <style jsx="true">{`
